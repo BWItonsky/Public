@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GTM Intelligence Reset 2026 | Revenue Insight</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0D2340;
+    --teal: #1B6B5A;
+    --teal-light: #E8F4F1;
+    --green: #3B7A3E;
+    --green-light: #EAF3DE;
+    --green-accent: #5A9E3A;
+    --white: #FFFFFF;
+    --off-white: #F7F8F6;
+    --border: #DDE4DC;
+    --text-muted: #5A6B5E;
+    --text-body: #1F2E24;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--text-body);
+    line-height: 1.6;
+  }
+
+  /* HERO */
+  .hero {
+    background: var(--navy);
+    padding: 72px 40px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 320px; height: 320px;
+    border-radius: 50%;
+    background: rgba(27,107,90,0.15);
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -40px;
+    width: 240px; height: 240px;
+    border-radius: 50%;
+    background: rgba(90,158,58,0.1);
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #5DCAA5;
+    background: rgba(93,202,165,0.12);
+    border: 1px solid rgba(93,202,165,0.3);
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+  }
+
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.15;
+    max-width: 780px;
+    margin: 0 auto 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: #5DCAA5;
+  }
+
+  .hero-sub {
+    font-size: 17px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.65);
+    max-width: 560px;
+    margin: 0 auto 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-meta-item {
+    font-size: 12px;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.04em;
+  }
+
+  .hero-meta-item strong {
+    color: rgba(255,255,255,0.75);
+    font-weight: 500;
+  }
+
+  .hero-divider {
+    color: rgba(255,255,255,0.2);
+  }
+
+  /* STAT BAND */
+  .stat-band {
+    background: var(--teal);
+    padding: 36px 40px;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .stat-item {
+    text-align: center;
+    padding: 0 24px;
+    position: relative;
+  }
+
+  .stat-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0; top: 10%; bottom: 10%;
+    width: 1px;
+    background: rgba(255,255,255,0.2);
+  }
+
+  .stat-number {
+    font-family: 'DM Serif Display', serif;
+    font-size: 42px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.65);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+  }
+
+  /* MAIN */
+  .main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 64px 40px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .section-body {
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 600px;
+    line-height: 1.75;
+    margin-bottom: 48px;
+  }
+
+  /* INFOGRAPHIC */
+  .infographic-wrap {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 64px;
+    box-shadow: 0 4px 24px rgba(13,35,64,0.06);
+  }
+
+  .infographic-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .infographic-caption {
+    background: var(--off-white);
+    border-top: 1px solid var(--border);
+    padding: 14px 20px;
+    font-size: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .infographic-caption a {
+    color: var(--teal);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  /* FINDINGS */
+  .findings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 64px;
+  }
+
+  @media (max-width: 620px) {
+    .findings-grid { grid-template-columns: 1fr; }
+  }
+
+  .finding-card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 24px;
+    background: var(--white);
+    transition: box-shadow 0.2s;
+  }
+
+  .finding-card:hover {
+    box-shadow: 0 4px 20px rgba(13,35,64,0.08);
+  }
+
+  .finding-number {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--green-accent);
+    margin-bottom: 10px;
+  }
+
+  .finding-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .finding-body {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .finding-card.accent {
+    background: var(--navy);
+    border-color: var(--navy);
+    grid-column: 1 / -1;
+  }
+
+  .finding-card.accent .finding-number { color: #5DCAA5; }
+  .finding-card.accent .finding-title { color: var(--white); }
+  .finding-card.accent .finding-body { color: rgba(255,255,255,0.6); }
+
+  /* DIVIDER */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0 0 64px;
+  }
+
+  /* CTA */
+  .cta-block {
+    background: var(--off-white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 48px 40px;
+    text-align: center;
+  }
+
+  .cta-block .section-label { justify-content: center; display: block; }
+
+  .cta-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(22px, 3vw, 30px);
+    color: var(--navy);
+    margin-bottom: 14px;
+    line-height: 1.25;
+  }
+
+  .cta-body {
+    font-size: 15px;
+    color: var(--text-muted);
+    max-width: 480px;
+    margin: 0 auto 32px;
+    line-height: 1.7;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: var(--navy);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .cta-btn:hover {
+    background: var(--teal);
+    transform: translateY(-1px);
+  }
+
+  .cta-note {
+    margin-top: 16px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+
+  /* FOOTER */
+  .footer {
+    background: var(--navy);
+    padding: 32px 40px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .footer-tagline {
+    font-size: 12px;
+    color: rgba(255,255,255,0.4);
+    letter-spacing: 0.06em;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    .hero, .main, .stat-band { padding-left: 24px; padding-right: 24px; }
+    .stat-item:not(:last-child)::after { display: none; }
+    .stat-item { padding: 12px 0; }
+    .cta-block { padding: 36px 24px; }
+    .footer { padding: 28px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">2026 GTM Research</div>
+  <h1>The GTM Intelligence Reset:<br><em>Why System Design Outperforms Technology Spend</em></h1>
+  <p class="hero-sub">Research synthesized from SBI, GTM Partners, Cortado Group, ParkerGale Capital, and leading PE-backed B2B practitioners.</p>
+  <div class="hero-meta">
+    <span class="hero-meta-item"><strong>March 2026</strong></span>
+    <span class="hero-divider">·</span>
+    <span class="hero-meta-item"><strong>Revenue Insight</strong></span>
+    <span class="hero-divider">·</span>
+    <span class="hero-meta-item">PE-Backed B2B Focus</span>
+  </div>
+</section>
+
+<!-- STAT BAND -->
+<div class="stat-band">
+  <div class="stat-grid">
+    <div class="stat-item">
+      <div class="stat-number">4x</div>
+      <div class="stat-label">Growth rate advantage<br>for top compounders</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">43%</div>
+      <div class="stat-label">Average AE quota<br>attainment</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">28%</div>
+      <div class="stat-label">Of rep time spent<br>actually selling</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">132%</div>
+      <div class="stat-label">NRR for top-tier<br>GTM compounders</div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main class="main">
+
+  <!-- INTRO -->
+  <p class="section-label">The Core Finding</p>
+  <h2 class="section-title">Technology spend is now universal.<br>The performance gap is wider than ever.</h2>
+  <p class="section-body">The divergence between top-tier GTM compounders and average market participants is not driven by AI tools or technology investment. Both cohorts are spending similarly. The separator is system design — intentional ICP discipline, centralized governance, and revenue architecture built to compound over a holding period.</p>
+
+  <!-- INFOGRAPHIC -->
+  <div class="infographic-wrap">
+    <img src="https://assets.revenueinsight.io/GTM_Themes_March2026.png" alt="GTM Intelligence Reset 2026 - Four Critical Pillars Infographic" />
+    <div class="infographic-caption">
+      <span>Revenue Insight · GTM Intelligence Reset · March 2026</span>
+      <a href="https://assets.revenueinsight.io/GTM_Themes_March2026.png" target="_blank">View full size ↗</a>
+    </div>
+  </div>
+
+  <!-- FINDINGS -->
+  <p class="section-label">Five Core Findings</p>
+  <h2 class="section-title">What the research shows</h2>
+
+  <div class="findings-grid">
+
+    <div class="finding-card">
+      <div class="finding-number">Finding 01</div>
+      <div class="finding-title">Accidental Growth vs. Designed Motions</div>
+      <div class="finding-body">Most PE-backed companies reached their current ARR through growth that accumulated rather than was designed. When markets normalize, those companies struggle — they lack repeatable architecture. Top performers treat unfocused targeting as the root cause of pipeline failure, not rep quality.</div>
+    </div>
+
+    <div class="finding-card">
+      <div class="finding-number">Finding 02</div>
+      <div class="finding-title">The Rep Productivity Crisis is a System Failure</div>
+      <div class="finding-body">43% average AE quota attainment is not a talent problem. Reps spend only 28% of their week actually selling. High-performing organizations respond by moving toward engineered outbound — GTM Engineers automating administrative drag so human judgment concentrates at the conversion layer.</div>
+    </div>
+
+    <div class="finding-card">
+      <div class="finding-number">Finding 03</div>
+      <div class="finding-title">Centralized AI Governance Wins</div>
+      <div class="finding-body">Decentralized AI adoption — individual reps building their own GPTs — rarely reaches production quality. Companies winning the AI reset centralize it: a specialized team owns the customer journey and provides high-quality AI outputs as inputs for the sales team.</div>
+    </div>
+
+    <div class="finding-card">
+      <div class="finding-number">Finding 04</div>
+      <div class="finding-title">Annual Plans Fail by Q2</div>
+      <div class="finding-body">The traditional annual plan is increasingly obsolete. In its place: 90-day sprint models and habit-based demand generation. Effective demand gen is not a complex campaign — it is a consistent four-step loop: Create content → Ship to email list → Track signals → Call on signals.</div>
+    </div>
+
+    <div class="finding-card accent">
+      <div class="finding-number">Emerging Archetype</div>
+      <div class="finding-title">The Revenue Engineer</div>
+      <div class="finding-body">As these themes converge, a new professional archetype is emerging — the Revenue Engineer. This role combines GTM strategy with technical execution, replacing the traditional split between CROs and RevOps. For PE-backed companies, the most valuable skill is no longer mastery of a specific tool, but the adaptability to redesign the revenue system as new infrastructure emerges.</div>
+    </div>
+
+  </div>
+
+  <hr class="divider">
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <span class="section-label">Revenue Insight</span>
+    <h2 class="cta-title">If this matches what you're seeing in your portfolio, let's compare notes.</h2>
+    <p class="cta-body">Revenue Insight works with PE operating partners and portfolio company CEOs on ICP strategy, GTM architecture, and revenue systems built for compounding growth.</p>
+    <a href="mailto:barry@revenueinsight.io" class="cta-btn">Get in touch</a>
+    <p class="cta-note">Or connect on <a href="https://www.linkedin.com/in/barrywitonsky" style="color: var(--teal); text-decoration: none;">LinkedIn</a></p>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">Revenue Insight</div>
+  <div class="footer-tagline">Your guide from a goal to strategic execution · revenueinsight.io</div>
+</footer>
+
+</body>
+</html>
